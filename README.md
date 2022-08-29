@@ -1,4 +1,4 @@
-# [Hugo Obsidian Notes Theme](https://github.com/wowchemy/hugo-notes-theme)
+# [Hugo Obsidian Notes Theme](https://github.com/wowchemy/hugo-notes-theme) HOLA
 
 [![Screenshot](./preview.webp)](https://wowchemy.com/hugo-themes/)
 
