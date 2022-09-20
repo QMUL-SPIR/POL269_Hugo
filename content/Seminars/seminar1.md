@@ -1,10 +1,12 @@
 ---
-title: Seminar 1
-linktitle: Seminar 1
+title: Week 1
+linktitle: Week 1
 type: book
 date: '2019-05-05T00:00:00+01:00'
-
 weight: 2
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 # Introduction to R
@@ -28,8 +30,8 @@ project titled Seminar 1.
 
 ### RStudio
 
-Let’s get acquainted with `R`. When you start RStudio for the first
-time, you’ll see **three panes**:
+Let's get acquainted with `R`. When you start RStudio for the first
+time, you'll see **three panes**:
 
 ![](img/rstudio_default.png)
 
@@ -44,7 +46,7 @@ something might have gone wrong, but do not prevent you from getting an
 output. Errors stop your code in its tracks and tell you something is
 wrong, so you do not get any output.
 
-Let’s familiarize ourselves with the console by using `R` as a simple
+Let's familiarize ourselves with the console by using `R` as a simple
 calculator:
 
     2 + 4
@@ -56,7 +58,7 @@ answer. But here it is a very basic line of code. The `+` operator has a
 meaning in `R`, and it also understands and reads numbers as they are.
 So `2 + 4` here is a command, written in `R` code, and the output of
 that code is 6. Now that we know how to use the `+` sign for addition,
-let’s try some other mathematical operations such as **subtraction**
+let's try some other mathematical operations such as **subtraction**
 (`-`), **multiplication** (`*`), and **division** (`/`).
 
     10 - 4
@@ -71,23 +73,16 @@ let’s try some other mathematical operations such as **subtraction**
 
     ## [1] 3.5
 
-<table>
-<colgroup>
-<col style="width: 73%" />
-<col style="width: 26%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>You can use the cursor or arrow keys on your keyboard to edit your
-code at the console:<br>- Use the UP and DOWN keys to re-run something
-without typing it again<br>- Use the LEFT and RIGHT keys to edit</td>
-<td><img src="./img/rstudio_cursorkeys.png" /></td>
-</tr>
-</tbody>
-</table>
++---------------------------------------------------+-----------------+
+| You can use the cursor or arrow keys on your      | ![]             |
+| keyboard to edit your code at the console:\       | (./img/rstudio_ |
+| - Use the UP and DOWN keys to re-run something    | cursorkeys.png) |
+| without typing it again\                          |                 |
+| - Use the LEFT and RIGHT keys to edit             |                 |
++---------------------------------------------------+-----------------+
 
 Take a few minutes to play around in the console and try different
-things out. Don’t worry if you make a mistake, you can’t break anything
+things out. Don't worry if you make a mistake, you can't break anything
 (at least not easily!).
 
 ### Functions
@@ -132,38 +127,21 @@ the help in a new window.
 Help pages for functions in R follow a consistent layout generally
 including these sections:
 
-<table>
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 83%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Description</td>
-<td>A brief description of the function</td>
-</tr>
-<tr class="even">
-<td>Usage</td>
-<td>The complete syntax or grammar including all arguments (inputs)</td>
-</tr>
-<tr class="odd">
-<td>Arguments</td>
-<td>Explanation of each argument</td>
-</tr>
-<tr class="even">
-<td>Details</td>
-<td>Any relevant details about the function and its arguments</td>
-</tr>
-<tr class="odd">
-<td>Value</td>
-<td>The output value of the function</td>
-</tr>
-<tr class="even">
-<td>Examples</td>
-<td>Example of how to use the function</td>
-</tr>
-</tbody>
-</table>
++-------------+-------------------------------------------------------+
+| Description | A brief description of the function                   |
++-------------+-------------------------------------------------------+
+| Usage       | The complete syntax or grammar including all          |
+|             | arguments (inputs)                                    |
++-------------+-------------------------------------------------------+
+| Arguments   | Explanation of each argument                          |
++-------------+-------------------------------------------------------+
+| Details     | Any relevant details about the function and its       |
+|             | arguments                                             |
++-------------+-------------------------------------------------------+
+| Value       | The output value of the function                      |
++-------------+-------------------------------------------------------+
+| Examples    | Example of how to use the function                    |
++-------------+-------------------------------------------------------+
 
 ### The Assignment Operator
 
@@ -177,14 +155,14 @@ we would do the following:
     myresult <- sum(1, 4, 10)
 
 The line above creates a new object called `myresult` in our environment
-and saves the result of the `sum(1, 4, 10)` in it. To see what’s in
+and saves the result of the `sum(1, 4, 10)` in it. To see what's in
 `myresult`, just type it in the console:
 
     myresult
 
     ## [1] 15
 
-Take a look at the **Environment** pane in RStudio and you’ll see
+Take a look at the **Environment** pane in RStudio and you'll see
 `myresult` there.
 
 ![](img/rstudio_env.png)
@@ -198,101 +176,63 @@ case letters (`A-Z`, `a-z`), numbers (`0-9`), underscores (`_`) or a dot
 (`.`) but all object names must start with a letter. Choose names that
 are descriptive and easy to type.
 
-<table>
-<thead>
-<tr class="header">
-<th>Good Object Names</th>
-<th>Bad Object Names</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>result</td>
-<td>a</td>
-</tr>
-<tr class="even">
-<td>myresult</td>
-<td>x1</td>
-</tr>
-<tr class="odd">
-<td>my.result</td>
-<td>this.name.is.just.too.long</td>
-</tr>
-<tr class="even">
-<td>my_result</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>data1</td>
-<td></td>
-</tr>
-</tbody>
-</table>
++-------------------+----------------------------+
+| Good Object Names | Bad Object Names           |
++===================+============================+
+| result            | a                          |
++-------------------+----------------------------+
+| myresult          | x1                         |
++-------------------+----------------------------+
+| my.result         | this.name.is.just.too.long |
++-------------------+----------------------------+
+| my_result         |                            |
++-------------------+----------------------------+
+| data1             |                            |
++-------------------+----------------------------+
 
 A good principle to follow is to name your objects so that other people
-– including, most importantly **your future self** – can easily work out
-what they are. Every person who has ever written code has experienced
-coming back to it later and having to start from scratch because they
-can’t remember what everything means. Try to avoid this, if possible, by
-getting into good habits now!
+-- including, most importantly **your future self** -- can easily work
+out what they are. Every person who has ever written code has
+experienced coming back to it later and having to start from scratch
+because they can't remember what everything means. Try to avoid this, if
+possible, by getting into good habits now!
 
 ### Scripts
 
-The Console is great for simple tasks but if you’re working on a project
+The Console is great for simple tasks but if you're working on a project
 you should save your work in some sort of a document or a file.
 **Scripts** in R are just plain text files that contain R code. You can
 edit a script just like you would edit a file in any word processing or
 note-taking application. You can also run code directly from it, but
-that code doesn’t disappear afterwards. This makes it easy to edit and
+that code doesn't disappear afterwards. This makes it easy to edit and
 improve your code over time, and makes your work **transparent**.
 
 Create a new script using the menu or the toolbar button as shown below.
 
 ![](img/rstudio_newfile.png)
 
-Once you’ve created a script, it is generally a good idea to give it a
+Once you've created a script, it is generally a good idea to give it a
 meaningful name and save it immediately. For our first session save your
 script as **seminar1.R**
 
-<table>
-<colgroup>
-<col style="width: 55%" />
-<col style="width: 44%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Familiarize yourself with the script window in RStudio, and
-especially the two buttons labeled <strong>Run</strong> and
-<strong>Source</strong></td>
-<td><img src="img/rstudio_script.png" /></td>
-</tr>
-</tbody>
-</table>
++--------------------------------------+------------------------------+
+| Familiarize yourself with the script | ![](img/rstudio_script.png)  |
+| window in RStudio, and especially    |                              |
+| the two buttons labeled **Run** and  |                              |
+| **Source**                           |                              |
++--------------------------------------+------------------------------+
 
 There are a few different ways to run your code from a script.
 
-<table>
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 75%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>One line at a time</td>
-<td>Place the cursor on the line you want to run and hit CTRL-ENTER or
-use the <strong>Run</strong> button</td>
-</tr>
-<tr class="even">
-<td>Multiple lines</td>
-<td>Select the lines you want to run and hit CTRL-ENTER or use the
-<strong>Run</strong> button</td>
-</tr>
-<tr class="odd">
-<td>Entire script</td>
-<td>Use the <strong>Source</strong> button</td>
-</tr>
-</tbody>
-</table>
++----------------+----------------------------------------------------+
+| One line at a  | Place the cursor on the line you want to run and   |
+| time           | hit CTRL-ENTER or use the **Run** button           |
++----------------+----------------------------------------------------+
+| Multiple lines | Select the lines you want to run and hit           |
+|                | CTRL-ENTER or use the **Run** button               |
++----------------+----------------------------------------------------+
+| Entire script  | Use the **Source** button                          |
++----------------+----------------------------------------------------+
 
 ### Working with Data
 
@@ -301,7 +241,7 @@ functions, on objects. What can we do with this? In most cases of
 quantitative research or data science, we use this process to manipulate
 and analyse quantitative **data**. In `R`, we typically deal with
 **dataframes**. These are like spreadsheets of data that you know from
-Microsoft Excel, arranged in columns and rows. But ‘data’, in general,
+Microsoft Excel, arranged in columns and rows. But 'data', in general,
 just means information that is gathered together in some way.
 
 It is easy to create our own dataframe, using the `data.frame()`
@@ -329,13 +269,13 @@ function, then see what we have created:
 
 You can run this code line by line, or all in one go, as you please.
 Just make sure you write it in the script and run it from there, as
-explained above. There are a few things here you haven’t seen before.
+explained above. There are a few things here you haven't seen before.
 First, everything after a `#` (known as a **comment**) is ignored.
 Second, the colon `:` tells `R` to create a **sequence** of all the
 numbers in the range specified. We will talk more about sequences next
 week.
 
-Looking at `my_data` you’ll see that the columns have strange titles. We
+Looking at `my_data` you'll see that the columns have strange titles. We
 can overwrite this using `colnames()`.
 
     # add/change column names
@@ -358,7 +298,7 @@ can overwrite this using `colnames()`.
     ## 11   10       30
 
 There is another new function introduced here: `c()`. This stands for
-**concatenate** which basically means ‘bring together’. It is what we
+**concatenate** which basically means 'bring together'. It is what we
 use in `R` to create **vectors**. We will discuss this more next week.
 
 This dataframe shows you, at a basic level, the format we use to deal
@@ -379,7 +319,7 @@ do this in future tutorials.
     # open the default 'women' dataset from within R
     data(women)
 
-We can confirm the type of object ‘women’ is using `class()`:
+We can confirm the type of object 'women' is using `class()`:
 
     class(women)
 
@@ -414,7 +354,7 @@ beginning of the dataset - `head()` - or the end - `tail()`.
 Just looking at the numbers like this, it is not easy to see how they
 are related. A useful way to understand any relationship between
 different variables is to **plot** them. It is easy to generate plots in
-`R`. We’ll explore this a lot more in future tutorials.
+`R`. We'll explore this a lot more in future tutorials.
 
     # scatterplot
     plot(women$height, women$weight)
@@ -495,7 +435,7 @@ exercises below before next time.
 1.  Create a script and call it assignment01. Save your script.
 2.  Download this
     [cheat-sheet](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf)
-    and go over it. You won’t understand most of it right away. But it
+    and go over it. You won't understand most of it right away. But it
     will become a useful resource. Look at it often.
 3.  Calculate the square root of 1369 using the `sqrt()` function.
 4.  Square the number 13 using the `^` operator.
