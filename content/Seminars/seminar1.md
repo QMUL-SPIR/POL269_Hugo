@@ -2,11 +2,9 @@
 title: Week 1
 linktitle: Week 1
 type: book
-date: '2019-05-05T00:00:00+01:00'
 weight: 2
 editor_options: 
   markdown: 
-    wrap: 72
 ---
 
 # Introduction to R
@@ -73,13 +71,13 @@ let's try some other mathematical operations such as **subtraction**
 
     ## [1] 3.5
 
-+---------------------------------------------------+-----------------+
-| You can use the cursor or arrow keys on your      | ![]             |
-| keyboard to edit your code at the console:\       | (./img/rstudio_ |
-| - Use the UP and DOWN keys to re-run something    | cursorkeys.png) |
-| without typing it again\                          |                 |
-| - Use the LEFT and RIGHT keys to edit             |                 |
-+---------------------------------------------------+-----------------+
++--------------------------------------------------+-----------------+
+| You can use the cursor or arrow keys on your     | []              |
+| keyboard to edit your code at the console:\      | ()               |
+| - Use the UP and DOWN keys tore-run something   | ./img/rstudio\_ |
+| without typing it again\       |                 | cursorkeys.png)  |
+| - Use the LEFT and RIGHT keys toedit            |                  |
++-------------------------------------------------+------------------+
 
 Take a few minutes to play around in the console and try different
 things out. Don't worry if you make a mistake, you can't break anything
@@ -126,22 +124,21 @@ the help in a new window.
 
 Help pages for functions in R follow a consistent layout generally
 including these sections:
-
-+-------------+-------------------------------------------------------+
-| Description | A brief description of the function                   |
-+-------------+-------------------------------------------------------+
-| Usage       | The complete syntax or grammar including all          |
-|             | arguments (inputs)                                    |
-+-------------+-------------------------------------------------------+
-| Arguments   | Explanation of each argument                          |
-+-------------+-------------------------------------------------------+
-| Details     | Any relevant details about the function and its       |
-|             | arguments                                             |
-+-------------+-------------------------------------------------------+
-| Value       | The output value of the function                      |
-+-------------+-------------------------------------------------------+
-| Examples    | Example of how to use the function                    |
-+-------------+-------------------------------------------------------+
++|-------------+-----------------------------------------------------+|
+| Description  | A brief description of the function                |
++--------------+-----------------------------------------------------+|
+| Usage        | The complete syntax or grammar including all       |
+|              | arguments (inputs)                                  |
++--------------+-----------------------------------------------------+|
+| Arguments    | Explanation of each argument                       |
++--------------+-----------------------------------------------------+|
+| Details      | Any relevant details about the function and its    |
+|              | arguments                                           |
++--------------+-----------------------------------------------------+|
+| Value        | The output value of the function                   |
++--------------+-----------------------------------------------------+|
+| Examples     | Example of how to use the function                 |
++--------------+-----------------------------------------------------+|
 
 ### The Assignment Operator
 
@@ -175,20 +172,22 @@ we follow a few simple rules. Object names can contain upper or lower
 case letters (`A-Z`, `a-z`), numbers (`0-9`), underscores (`_`) or a dot
 (`.`) but all object names must start with a letter. Choose names that
 are descriptive and easy to type.
++------------------+---------------------------+
 
-+-------------------+----------------------------+
-| Good Object Names | Bad Object Names           |
-+===================+============================+
-| result            | a                          |
-+-------------------+----------------------------+
-| myresult          | x1                         |
-+-------------------+----------------------------+
-| my.result         | this.name.is.just.too.long |
-+-------------------+----------------------------+
-| my_result         |                            |
-+-------------------+----------------------------+
-| data1             |                            |
-+-------------------+----------------------------+
+| Good Object    s | Bad Object Names         |
+| Names            |                           |
++==================+===========================+
+| result           | a                         |
++------------------+|--------------------------+|
+|my result        | x1                         |+------------------+---------------------------+
+
+| m.yresult        |t1                         |
+|        t         |this.name.is.just.too.long |+------------------+---------------------------+
+
+| my_result        |                           |+------------------+---------------------------+
+
+| data1            |                           
++------------------+---------------------------+|
 
 A good principle to follow is to name your objects so that other people
 -- including, most importantly **your future self** -- can easily work
@@ -214,25 +213,23 @@ Create a new script using the menu or the toolbar button as shown below.
 Once you've created a script, it is generally a good idea to give it a
 meaningful name and save it immediately. For our first session save your
 script as **seminar1.R**
-
-+--------------------------------------+------------------------------+
-| Familiarize yourself with the script | ![](img/rstudio_script.png)  |
-| window in RStudio, and especially    |                              |
-| the two buttons labeled **Run** and  |                              |
-| **Source**                           |                              |
-+--------------------------------------+------------------------------+
++-------------------------------------+-----------------------------+
+| Familiarize yourself with the       | ![](img/rstudio_script.png) |
+| script window in RStudio, and       |                             |
+| especially the two buttons labeled  |                             |
+| **Run** and **Source**              |                              |+|------------------------------------+-----------------------------+
 
 There are a few different ways to run your code from a script.
 
-+----------------+----------------------------------------------------+
-| One line at a  | Place the cursor on the line you want to run and   |
-| time           | hit CTRL-ENTER or use the **Run** button           |
-+----------------+----------------------------------------------------+
-| Multiple lines | Select the lines you want to run and hit           |
-|                | CTRL-ENTER or use the **Run** button               |
-+----------------+----------------------------------------------------+
-| Entire script  | Use the **Source** button                          |
-+----------------+----------------------------------------------------+
++----------------+---------------------------------------------------+|
+| One line at ae | Place the cursor on the line you want to run an  |
+| time           |d hit CTRL-ENTER or use the **Run** button         |
++----------------+---------------------------------------------------+|
+| Multiple lines | Select the lines you want to run and hi          |
+|                |t CTRL-ENTER or use the **Run** button              |+----------------+---------------------------------------------------+
+
+| Entire script  | Use the **Source** button                        |
++----------------+---------------------------------------------------+|
 
 ### Working with Data
 
