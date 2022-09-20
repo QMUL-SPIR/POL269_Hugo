@@ -6,7 +6,7 @@ type: book
 weight: 2
 ---
 
-# Introduction to R
+## Introduction to R
 
 ## Seminar
 
