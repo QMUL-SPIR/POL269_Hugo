@@ -1,32 +1,42 @@
 ---
-title:  Notes
+title:  POL269 - Political Data Research
 type: book # Do not modify.
 toc: false
 
 cover:
   image: covers/democracy.png
-  caption: NASA
+  caption: Electoral Democracy in 2018
 ---
 
-Welcome to the _Notes_ template!
+Welcome to POL269 - Political Data Research. My name is [Dr. Javier Sajuria](www.sajuria.com) and I am the convenor for this module. This module is co-taught with [Dr. Sofia Collingon](https://sofiacollignon.com).
 
-The **Notes** starter template empowers you to easily create  **personal notes** and **knowledge bases** in a future-proof way.
 
-- It is your second brain 🧠, stored in future-proof Markdown files 
-- Supports audio, video, images, math, code, [Mermaid](https://mermaid.live/) diagrams, and [much more](https://wowchemy.com/docs/content/writing-markdown-latex/)
-- Edit your notes online in GitHub, or any Git-connected Markdown app such as [Obsidian](https://obsidian.md/) or [Visual Studio Code](https://vscode.dev/)
 
-## Public vs Private Second Brain
+## Module overview {-} 
 
-Choose between **publishing and sharing your knowledge online or creating a private second brain**.
+This module provides essential research training in the use of **quantitative methods in the political and social sciences**. We introduce you to how we use quantitative data to learn about the political world, by teaching you the **theory behind quantitative data analysis** and giving you **hands-on experience in using the statistical software `R`**.
+The course is, therefore, particularly useful for those interested in a future career in data analytics or in 
+becoming critical consumers of quantitative research. The module caters to students from diverse 
+academic disciplines and adopts a practical approach to learning, with weekly computer tutorials.   
 
-To create an **open second brain**, share your notes as a website [by deploying the Note template](https://wowchemy.com/hugo-themes/).
 
-To create a **private second brain** either:
+The module covers **descriptive statistics, data visualisation, data access, probability, sampling, hypothesis testing, inferential statistics and linear regression**. 
+Students will be introduced to the `R` statistical software and work with data used in current academic research.
 
-- After deploying your Notes site above, [password protect your online second brain](https://docs.netlify.com/visitor-access/password-protection/) and configure your GitHub repo as **private**
-- [Download this template](https://github.com/wowchemy/hugo-notes-theme) and [run the tool locally](https://wowchemy.com/docs/getting-started/install-hugo-extended/)
 
-## Example notebook
+## Advice and Feedback Hours {-}
 
-{{< cta cta_text="👉 Check out the Machine Learning notebook" cta_link="machine-learning" >}}
+**Please make use of our advice and feedback hours!**
+
+My advice and feedback hours are **Tuesdays 10.00-11.00** and by appointment. You can book your slot [via Calendly](https://calendly.com/drjaviersajuria/afhour?). These meetings will take place in my office or via Teams. If you need to meet outside these hours, please email and we can try and arrange a new date.
+
+Some groups' tutorials will be run by **Dr Sofia Collignon**. Her advice and feedback hours will be announced soon.
+
+
+---
+
+<div class="container btn-container">
+  <button type = "button" class = "btn btn-sm btn-info" onclick="window.open('https://qmplus.qmul.ac.uk');">QMPlus</button>
+  <button type = "button" class = "btn btn-sm btn-warning" onclick="window.open('http://www.openintro.org/stat/textbook.php');">Diez et al. Book</button> 
+  <button type = "button" class = "btn btn-sm btn-warning" onclick="window.open('http://onlinestatbook.com/Online_Statistics_Education.pdf');">Lane et al. Book</button>
+
