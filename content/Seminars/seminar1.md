@@ -3,8 +3,6 @@ title: Week 1
 linktitle: Week 1
 type: book
 weight: 2
-editor_options: 
-  markdown: 
 ---
 
 # Introduction to R
