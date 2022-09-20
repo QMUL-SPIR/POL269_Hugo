@@ -8,7 +8,9 @@ cover:
   caption: Electoral Democracy in 2018
 ---
 
-Welcome to POL269 - Political Data Research. My name is [Dr. Javier Sajuria](www.sajuria.com) and I am the convenor for this module. This module is co-taught with [Dr. Sofia Collingon](https://sofiacollignon.com).
+Welcome to POL269 - Political Data Research at the [School of Politics and International Relations, Queen Mary University of London](https://www.qmul.ac.uk/politics/). 
+
+My name is [Dr. Javier Sajuria](www.sajuria.com) and I am the convenor for this module. This module is co-taught with [Dr. Sofia Collingon](https://sofiacollignon.com).
 
 
 
